@@ -31,7 +31,7 @@ add_filter('the_title', 'titleTime', 10, 2);
 
 
 
-function titleTime($title, $id,)
+function titleTime($title, $id)
 {
     if (!get_post_meta($id, 'reading_time', true)) {
         return $title;
